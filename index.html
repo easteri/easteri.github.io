@@ -45,6 +45,35 @@
 			transition-timing-function: initial;
 			transition-delay: initial;
 		}
+
+		ul#coursework {
+			padding-left: 0px;
+			list-style-type: none;
+		}
+
+		ul#coursework li {
+			margin: 10px 0;
+		}
+
+		ul.courselist
+		{
+		    margin: 10px;
+		    padding: 0;
+		}
+
+		ul.courselist li
+		{
+		    list-style-type: none;
+		    display: inline;
+		}
+
+		ul.courselist li:before {
+			content: " | ";
+		}
+
+		ul.courselist li:first-child:before {
+			content: none;
+		}
 	</style>
 
 	<!--[if lt IE 9]>
@@ -76,14 +105,24 @@ I am currently working towards my undergraduate thesis under the supervision of 
 
 <h3>
 <a id="selected-coursework" class="anchor" href="#selected-coursework" aria-hidden="true"><span class="octicon octicon-link"></span></a>Selected Coursework</h2>
-<ul>
-<li>Convex Optimization</li>
-<li>Randomized Algorithms</li>
-<li>Advanced Topics in Databases</li>
-<li>Machine Learning (graduate-level)</li>
-<li>Probabilistic Graphical Models and Inference Alg. (graduate-level)</li>
-<li>Statistical Signal Processing</li>
-<li>Information Theory</li>
+<ul id="coursework">
+	<li>
+		Undergraduate
+		<ul class="courselist">
+			<li>Convex Optimization</li>
+			<li>Randomized Algorithms</li>
+			<li>Advanced Topics in Databases</li>
+			<li>Statistical Signal Processing</li>
+			<li>Information Theory</li>
+		</ul>
+	</li>
+	<li>
+		Graduate
+		<ul class="courselist">
+			<li>Machine Learning</li>
+			<li>Probabilistic Graphical Models and Inference Algorithms</li>
+		</ul>
+	</li>
 </ul>
 
       </section>
