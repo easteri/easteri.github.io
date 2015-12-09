@@ -132,16 +132,15 @@ I am currently working towards my undergraduate thesis under the supervision of 
 		<a href="repo/report_main.pdf">Eternity II</a> (Course project, <i>Convex Optimization</i>)
 		
 		<ul class="courselist">
-		Implementation of a solver for edge-matching puzzle problem, Eternity II.
-		Based on J. Dattorro's modeling example (&sect;4.6.0.0.15, <i>"Convex Optimization and Euclidean Distances"</i> ), 
-		we model and try to solve Eternity II (and identical subproblems) as a constrained convex optimization problem.
-		We evaluate original problem's requirements in terms of memory space, and exploit sparsity in order to reduce 
+		We implemented an algorithm for sovling Eternity II (<a href="https://en.wikipedia.org/wiki/Eternity_II_puzzle">wikipedia</a>), an edge-matching puzzle with the objective of placing 256 square pieces into a 16 by 16 grid under the constraint that adjacent pieces have matching edges. 
+		Our algorith relies on modeling Eternity II (and identical subproblems) as a constrained convex optimization problem, based on J. Dattorro's modeling example (&sect;4.6.0.0.15, <i>"Convex Optimization and Euclidean Distances"</i> ).
+		We evaluate the memory requirement of the original problem and exploit sparsity in order to reduce 
 		its dimension. Due to CVX inaccuracy, we implement Simplex method (revised and not) in order to solve the 
 		required feasibility problems.
 		</ul>
 	</li>
 	<li>
-		<a href="http://snf-120019.vm.okeanos.grnet.gr/joomla/">Switch Off the Lights</a> - (Course project <i>Analysis and Design of Telecom Modules</i>)
+		<a href="http://snf-120019.vm.okeanos.grnet.gr/joomla/">Switch Off the Lights</a> - (Course project, <i>Analysis and Design of Telecom Modules</i>)
 		
 		<ul class="courselist">
 		We designed and implemented a custom, low‐cost, multi-hop wireless sensor network, 
