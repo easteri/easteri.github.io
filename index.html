@@ -133,9 +133,10 @@ I am currently working towards my undergraduate thesis under the supervision of 
 		
 		<ul class="courselist">
 		We implemented an algorithm for sovling Eternity II (<a href="https://en.wikipedia.org/wiki/Eternity_II_puzzle">wikipedia</a>), an edge-matching puzzle with the objective of placing 256 square pieces into a 16 by 16 grid under the constraint that adjacent pieces have matching edges. 
-		Our algorith relies on modeling Eternity II (and identical subproblems) as a constrained convex optimization problem, based on J. Dattorro's modeling example (&sect;4.6.0.0.15, <i>"Convex Optimization and Euclidean Distances"</i> ).
-		We evaluate the memory requirement of the original problem and exploit sparsity in order to reduce 
-		its dimension. Due to CVX inaccuracy, we implement Simplex method (revised and not) in order to solve the 
+		Our algorith relies on modeling Eternity II (and related subproblems) as a constrained convex optimization problem, based on J. Dattorro's modeling example (&sect;4.6.0.0.15, <i>"Convex Optimization and Euclidean Distances"</i> ).
+		We evaluate the memory requirements of the original problem and exploit sparsity in order to reduce 
+		its dimension.
+		We also implemented the Simplex method (revised and not) in order to solve the 
 		required feasibility problems.
 		</ul>
 	</li>
